@@ -87,7 +87,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
     }
 
     @Override
-    public void delete(long id) {
-        jdbcTemplate.update("DELETE FROM time_entries WHERE id = ?", id);
+    public void delete(long id1) {
+        jdbcTemplate.update("DELETE FROM time_entries WHERE id = ?", id1);
     }
 }
